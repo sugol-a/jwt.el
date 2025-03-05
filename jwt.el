@@ -7,10 +7,6 @@
 
 (define-hmac-function jwt/hs256 jwt/sha256 64 32)
 
-(defun jwt/ui-make-buffer ()
-  (let ((buffer (get-buffer-create "*jwt*")))
-    ()))
-
 (defun jwt/plain-get-header (plain)
   (plist-get plain :header))
 
